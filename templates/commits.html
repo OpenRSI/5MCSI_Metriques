@@ -2,12 +2,16 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Commits</title>
+  <title>Commits par minute</title>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    #chart { width: 100%; height: 520px; }
+    .hint { color: #555; margin-bottom: 12px; }
+  </style>
 </head>
 <body>
   <h2>Répartition des commits par minute (0–59)</h2>
-  <p class="hint">Source: API GitHub → <code>commit.author.date</code>. Chaque barre = nombre de commits dont la minute correspond.</p>
   <div id="chart"></div>
 
   <script>
